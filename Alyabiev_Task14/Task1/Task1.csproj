@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{701C276E-8E49-4374-AD54-5C3B9F8420D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Alyabiev.Task14.Task1</RootNamespace>
+    <AssemblyName>Alyabiev.Task14.Task1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\RewardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RewardForm.Designer.cs">
+      <DependentUpon>RewardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RewardsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\RewardsForm.Designer.cs">
+      <DependentUpon>RewardsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RewardedUser.cs" />
+    <Compile Include="enums.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Helpers\WinFormHelpers.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Reward.cs" />
+    <Compile Include="Helpers\RusNumeralsFollowingWord.cs" />
+    <Compile Include="Entities\User.cs" />
+    <EmbeddedResource Include="Controls\RewardForm.resx">
+      <DependentUpon>RewardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RewardsForm.resx">
+      <DependentUpon>RewardsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
