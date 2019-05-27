@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Page</title>
+	<link href="res/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        Несколько слов.
+    </header>
+
+    <nav> 
+        <ul> 
+            <li><a href="#">Главная</a></li> 
+            <li><a href="#">О компании</a></li> 
+            <li><a href="#">Партнёры</a></li> 
+        </ul> 
+    </nav>
+
+    <section id="formatting">
+        <b>Жирный шрифт</b></br>
+        <big>Крупный шрифт</big></br>
+        <strong>Важный шрифт</strong></br>
+        <i>Курсивный текст</i></br>
+        <small>Маленький текст</small></br>
+        <sub>Подстрочный текст</sub></br>
+        <sup>Надстрочный текст</sup></br>
+        <ins>Вставленный текст</ins></br>
+        <del>Удаленный текст</del></br>
+    </section>
+
+    <section>
+        <article>
+            <p>
+                1
+                <br />
+                2
+            </p>
+            
+            <p>
+                To be?
+                <br />
+                Or not to be?
+                <br />
+                That is the question.
+            </p>
+
+            <p>
+                &nbsp
+            </p>
+
+            <p>
+            H<sub>2</sub>O.
+            <br />
+                <div class="func">
+                    y = a ∙ x<sup>2</sup> + b ∙ x + c
+                    <span class="func-num">(1)</span>
+                </div>
+
+                <div>17&deg;C</div>
+                <br />
+                <div>666&plusmn;&Delta;∞</div>
+            </p>
+        </article>
+    </section>
+    
+	<section id="input-user">
+        <form action="" method="POST">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" placeholder="Имя" />
+
+            <div id="gender" class="group">
+                <input type="radio" name="gender" id="gender-male" value="male" />
+                <label for="gender-male">Male</label>
+                <br />
+                <input type="radio" name="gender" id="gender-female" value="female" />
+                <label for="gender-female">Female</label>
+                <br />
+                <input type="radio" name="gender" id="gender-other" value="other" />
+                <label for="gender-other">Other</label>
+                <br />
+            </div>
+
+            <label>Пол:
+            <input type="text" list="sex"> 
+            <datalist id="sex"> 
+                <option value="none" />
+                <option value="female" />
+                <option value="male" />
+                <option value="both" />
+                <option value="unknown" />
+            </datalist> 
+            </label><br />
+            <label>Логин:</label>
+            <input type="text" placeholder="Логин" /><br />
+            <label>e-mail:</label><input type="email" placeholder="Почта" /><br />
+            <label>Номер телефона:</label><input type="tel" placeholder="Телефон" /><br />
+            <label>Пароль:</label><input type="password" placeholder="Пароль"><br />
+            <input type="submit" placeholder="Отправить!"><br />
+        </form><br />
+	</section>
+
+</body>
+</html>
