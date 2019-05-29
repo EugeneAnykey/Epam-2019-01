@@ -1,10 +1,14 @@
-﻿# Задания
+﻿# Tasks
 
+## interesting
 
+* 5.2 — use of DebuggerDisplay.
 
-## Тесты
+## Unit tests
 
-Задание 5 - Task4 (MyString),
-Задание 7 - Task4 (Game)
-Задание 8 - Task1 (DynamicArray)
-Задание 9 - Task2 (DynamicArrayEx)
+> used nunit.framework
+
+* Task 5 — Task4 (MyString),
+* Task 7 — Task4 (Game)
+* Task 8 — Task1 (DynamicArray)
+* Task 9 — Task2 (DynamicArrayEx)
