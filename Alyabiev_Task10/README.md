@@ -1,7 +1,5 @@
 # Занятие 10. Делегаты и события
 
-Занятие 1 апреля. Обзор SOLID и шаблонов проектирования.
-
 * [Простое объяснение принципов SOLID](https://habr.com/ru/company/mailru/blog/412699/)
 * [SOLID Principles-simple and easy explanation — by Nahidul Hasan](https://hackernoon.com/solid-principles-simple-and-easy-explanation-f57d86c47a7f)
 
