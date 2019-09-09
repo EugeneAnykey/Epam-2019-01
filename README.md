@@ -35,7 +35,7 @@
   * Math lib.
   * *Employee* is *IEquatable<Employee>*.
   * GetHashCode.
-* [Task 12 — Работа с файлами](./Alyabiev_Task11/README.md):
+* [Task 12 — Работа с файлами](./Alyabiev_Task12/README.md):
   * Изменение содержание файла.
   * Мини-логгер.
 
